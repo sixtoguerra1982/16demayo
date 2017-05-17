@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <title>z-index</title>
+    <style>
+        html, body { margin: 0; }
+        .elem {
+            width: 350px;
+            height: 250px;
+            margin: 5px;
+        }
+        .square1 {
+            float: left;
+            background-color: red;
+            border: solid 1px black;
+            box-sizing: border-box;
+        }
+
+        .square1a{
+            position: absolute;
+            background-color: yellow;
+            height: 100px;
+            left: 0px;
+            top: 75px;
+        }
+        .square2 {
+            float: left;
+            background-color: white;
+
+        }
+        .square2a {
+            background-color: red;
+            height: 100px;
+            width: 100px;
+            float: left;
+        }
+        .square2b {
+            background-color: red;
+            height: 100px;
+            width: 225px;
+            float: left;
+            margin-left: 25px;
+        }
+        .square2c {
+            background-color: red;
+            height: 125px;
+            width: 100px;
+            float: left;
+            margin-top: 25px;
+        }
+        .square2d {
+            background-color: red;
+            height: 125px;
+            width: 225px;
+            float: left;
+            margin-left: 25px;
+            margin-top: 25px;
+        }
+
+        .square3 {
+            float: left;
+            background-color: white;
+
+        }
+
+        .square3a {
+            float: left;
+            background-color:red;
+            height: 100%;
+            width: 100px;
+        }
+        .square3b {
+            float: left;
+            background-color:green;
+            width: 250px;
+            height: 85px;
+        }
+        .square3c {
+            float: left;
+            background-color:black;
+            width: 250px;
+            height: 85px;
+            margin-top: 80px;
+        }
+        .square4 {
+            float: left;
+            background-color: white;
+            border: solid 1px black;
+
+
+        }
+        .square4a
+        {
+
+            border-radius: 100px;
+            background-color: red;
+            height: 100px;
+            width: 100px;
+            margin:auto;
+            margin-top: 75px;
+        
+        }
+
+    </style>
+</head>
+<body>
+    <div class="elem square1">
+        <div class="elem square1a"></div>
+    </div>
+
+    <div class="elem square2">
+        <div class="square2a"></div>
+        <div class="square2b"></div>
+        <div class="square2c"></div>
+        <div class="square2d"></div>
+    </div>
+    <div class="elem square3">
+        <div class="square3a"></div>
+        <div class="square3b"></div>
+        <div class="square3c"></div>
+    </div>
+    <div class="elem square4">
+     <div class="square4a"></div>
+    </div>
+</body>
+</html>
